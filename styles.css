@@ -55,12 +55,10 @@ header nav ul li a:hover {
 }
 
 .hero-logo {
-    max-width: 200px;
+    width: 250px; /* Tamaño del logo */
+    max-width: 100%; /* Asegura que no sobrepase el contenedor */
+    height: auto;
     margin-bottom: 20px;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
 }
 
 /* About */
@@ -155,14 +153,14 @@ footer {
     padding: 20px;
 }
 
-/* RESPONSIVE DESIGN */
+/* Diseño Responsivo */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;
     }
 
     .hero-logo {
-        max-width: 150px;
+        width: 200px;
     }
 
     .about .info-box div {
@@ -172,14 +170,5 @@ footer {
     .service-card {
         width: 100%;
         margin: 10px 0;
-    }
-
-    header nav ul {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    header nav ul li a {
-        font-size: 0.9rem;
     }
 }
