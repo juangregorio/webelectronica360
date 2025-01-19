@@ -46,18 +46,14 @@ header nav ul li a {
 }
 
 .hero img.logo {
-    width: 200px;
+    width: 300px; /* Tamaño ajustado para mayor visibilidad */
     margin-bottom: 20px;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 1.5rem;
+.hero .slogan {
+    font-size: 2rem; /* Tamaño más prominente */
     margin-top: 10px;
+    font-weight: bold;
 }
 
 /* Section Styles */
@@ -96,19 +92,16 @@ form button {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
-    }
-
     .hero img.logo {
-        width: 150px;
+        width: 200px; /* Ajuste en móvil */
+    }
+
+    .hero .slogan {
+        font-size: 1.5rem; /* Ajuste en móvil */
     }
 
     header nav ul {
         flex-direction: column;
+        gap: 10px;
     }
 }
