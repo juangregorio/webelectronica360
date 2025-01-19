@@ -55,125 +55,30 @@ header nav ul li a:hover {
 }
 
 .hero-logo {
-    width: 600px; /* Tamaño del logo en escritorio */
-    max-width: 100%; /* Asegura que no sobrepase el contenedor */
+    width: 150px; /* Tamaño predeterminado para escritorio */
     height: auto;
     margin-bottom: 20px;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Ajustar tamaño del slogan */
     margin-top: 20px;
-}
-
-/* About */
-.about {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-.about .info-box {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.about .info-box div {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 300px;
-}
-
-/* Services */
-.services {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.service-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.service-card {
-    width: 300px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.service-card img {
-    width: 80px;
     margin-bottom: 10px;
-}
-
-/* Contact */
-.contact {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.contact form {
-    max-width: 500px;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact form input, .contact form textarea {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact form button {
-    background-color: #3179CF;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.contact form button:hover {
-    background-color: #275a9f;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    line-height: 1.4;
 }
 
 /* Diseño Responsivo */
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
+    .hero {
+        height: auto; /* Ajustar para no ocupar todo el viewport */
+        padding: 40px 20px;
     }
 
     .hero-logo {
-        width: 400px; /* Tamaño más grande para móviles */
+        width: 200px; /* Más grande para móviles */
     }
 
-    .about .info-box div {
-        width: 100%;
-    }
-
-    .service-card {
-        width: 100%;
-        margin: 10px 0;
+    .hero h1 {
+        font-size: 1.8rem; /* Reducir un poco para móviles */
     }
 }
