@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electrónica 360</title>
-    <link href="https://fonts.googleapis.com/css2?family=Gotham:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Encabezado -->
     <header>
-        <h1>Electrónica 360</h1>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Electrónica 360">
+        </div>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -21,50 +23,64 @@
         </nav>
     </header>
 
-    <!-- Sección Hero -->
+    <!-- Hero -->
     <section id="inicio" class="hero">
-        <h2>Soluciones Técnicas Sin Límites</h2>
-        <p>Reparación y venta de computadoras, impresoras, monitores y laptops con garantía y confianza.</p>
-        <a href="#contacto" class="btn-primary">Contáctanos</a>
+        <div class="hero-content">
+            <h1>Soluciones Técnicas Sin Límites</h1>
+            <p>Confianza y tecnología para tus equipos electrónicos.</p>
+            <a href="#contacto" class="btn-primary">Contáctanos</a>
+        </div>
     </section>
 
     <!-- Sobre Nosotros -->
     <section id="nosotros" class="about">
-        <h2>Sobre Nosotros</h2>
-        <p>En Electrónica 360, entregamos calidad, seguridad y cultura tecnológica a nuestros clientes.</p>
-        <h3>Misión</h3>
-        <p>Entregar calidad, seguridad y cultura tecnológica a nuestros clientes.</p>
-        <h3>Visión</h3>
-        <p>Ser una gran empresa en el servicio técnico con un respaldo profesional y en tecnología a disposición de nuestros clientes.</p>
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>En Electrónica 360, ofrecemos soluciones avanzadas en reparación y venta de productos electrónicos. Nuestra misión es garantizar calidad y seguridad para nuestros clientes.</p>
+            <div class="info-box">
+                <div>
+                    <h3>Misión</h3>
+                    <p>Entregar calidad, seguridad y cultura tecnológica a nuestros clientes.</p>
+                </div>
+                <div>
+                    <h3>Visión</h3>
+                    <p>Ser un referente en servicios técnicos y tecnología innovadora.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Servicios -->
     <section id="servicios" class="services">
-        <h2>Nuestros Servicios</h2>
-        <div class="service-container">
-            <div class="service-card">
-                <img src="macbook.png" alt="Reparación de MacBooks">
-                <h3>Reparación de MacBooks</h3>
-                <p>Especialistas en reparar cualquier modelo de MacBook con tecnología avanzada.</p>
-            </div>
-            <div class="service-card">
-                <img src="componentes.png" alt="Venta de Componentes">
-                <h3>Venta de Componentes</h3>
-                <p>Ofrecemos una amplia variedad de piezas electrónicas de alta calidad.</p>
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <img src="macbook.png" alt="Reparación de MacBooks">
+                    <h3>Reparación de MacBooks</h3>
+                    <p>Especialistas en reparar cualquier modelo con tecnología avanzada.</p>
+                </div>
+                <div class="service-card">
+                    <img src="componentes.png" alt="Venta de Componentes">
+                    <h3>Venta de Componentes</h3>
+                    <p>Piezas electrónicas de alta calidad para tus necesidades.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contacto -->
     <section id="contacto" class="contact">
-        <h2>Contáctanos</h2>
-        <p>¿Tienes preguntas? Envíanos un mensaje y te responderemos pronto.</p>
-        <form action="https://formsubmit.co/tu-correo-electronico" method="POST">
-            <input type="text" name="nombre" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu correo electrónico" required>
-            <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <p>Envíanos tus consultas y te responderemos a la brevedad.</p>
+            <form action="https://formsubmit.co/tu-correo-electronico" method="POST">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
 
     <!-- Pie de Página -->
