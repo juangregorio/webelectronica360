@@ -4,106 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electrónica 360</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gotham:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos globales */
+        body {
+            margin: 0;
+            font-family: 'Gotham', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #3179CF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #71DBD8;
+        }
+
+        .hero {
+            background-color: #3179CF;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        .btn-primary {
+            background-color: #71DBD8;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background-color: #57a9a6;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        .about, .services, .contact {
+            text-align: center;
+        }
+
+        .about p, .services p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <img src="logo.png" alt="Electrónica 360">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#cursos">Cursos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Electrónica 360</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section id="inicio" class="hero">
-            <div class="overlay">
-                <h1>Soluciones Técnicas Sin Límites</h1>
-                <p>Reparación y venta de computadoras, impresoras, monitores y laptops.</p>
-                <a href="#contacto" class="btn-primary">Contáctanos</a>
-            </div>
-        </section>
+    <section id="inicio" class="hero">
+        <h2>Soluciones Técnicas Sin Límites</h2>
+        <p>Reparación y venta de computadoras, impresoras, monitores y laptops con garantía y confianza.</p>
+        <a href="#contacto" class="btn-primary">Contáctanos</a>
+    </section>
 
-        <section id="nosotros" class="about">
-            <div class="container">
-                <h2>Sobre Nosotros</h2>
-                <p>En Electrónica 360, ofrecemos soluciones avanzadas en reparación y venta de productos electrónicos. Nuestra misión es garantizar la calidad y el servicio técnico profesional para cada cliente.</p>
-            </div>
-        </section>
+    <section id="nosotros" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>En Electrónica 360, entregamos calidad, seguridad y cultura tecnológica a nuestros clientes. 
+        Nos esforzamos por ser un referente en servicio técnico especializado, brindando confianza y modernidad.</p>
+        <h3>Misión</h3>
+        <p>Entregar calidad, seguridad y cultura tecnológica a nuestros clientes.</p>
+        <h3>Visión</h3>
+        <p>Ser una gran empresa en el servicio técnico con un respaldo profesional y en tecnología a disposición de nuestros clientes.</p>
+    </section>
 
-        <section id="servicios" class="services">
-            <div class="container">
-                <h2>Nuestros Servicios</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <img src="macbook.png" alt="Reparación de MacBooks">
-                        <h3>Reparación de MacBooks</h3>
-                        <p>Especialistas en reparar cualquier modelo de MacBook con tecnología avanzada.</p>
-                    </div>
-                    <div class="service-card">
-                        <img src="componentes.png" alt="Venta de Componentes">
-                        <h3>Venta de Componentes</h3>
-                        <p>Ofrecemos una amplia variedad de piezas electrónicas de alta calidad.</p>
-                    </div>
-                    <!-- Puedes agregar más tarjetas de servicio aquí -->
-                </div>
-            </div>
-        </section>
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <p>Reparación avanzada de MacBooks, laptops y equipos electrónicos. Venta de componentes de alta calidad.</p>
+    </section>
 
-        <section id="cursos" class="courses">
-            <div class="container">
-                <h2>Nuestros Cursos</h2>
-                <div class="courses-grid">
-                    <div class="course-card">
-                        <h3>Curso de Reparación de Portátiles</h3>
-                        <p>Aprende a diagnosticar y reparar portátiles con nuestro curso especializado.</p>
-                        <a href="#" class="btn-secondary">Más Información</a>
-                    </div>
-                    <div class="course-card">
-                        <h3>Curso de Reparación de MacBooks</h3>
-                        <p>Conviértete en un experto en la reparación de MacBooks con nuestras clases prácticas.</p>
-                        <a href="#" class="btn-secondary">Más Información</a>
-                    </div>
-                    <!-- Puedes agregar más tarjetas de curso aquí -->
-                </div>
-            </div>
-        </section>
-
-        <section id="contacto" class="contact">
-            <div class="container">
-                <h2>Contáctanos</h2>
-                <form action="https://formsubmit.co/tu-correo-electronico" method="POST">
-                    <div class="form-group">
-                        <input type="text" name="nombre" placeholder="Tu nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Tu correo electrónico" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">Enviar</button>
-                </form>
-            </div>
-        </section>
-    </main>
+    <section id="contacto" class="contact">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes preguntas? Envíanos un mensaje y te responderemos pronto.</p>
+        <form action="https://formsubmit.co/tu-correo-electronico" method="POST">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Electrónica 360 - Todos los derechos reservados.</p>
-            <p>Contacto: <a href="mailto:contacto@electronica360.com">contacto@electronica360.com</a></p>
-        </div>
+        <p>&copy; 2023 Electrónica 360. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
