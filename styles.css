@@ -55,7 +55,7 @@ header nav ul li a:hover {
 }
 
 .hero-logo {
-    width: 250px; /* Tamaño del logo */
+    width: 400px; /* Tamaño grande del logo */
     max-width: 100%; /* Asegura que no sobrepase el contenedor */
     height: auto;
     margin-bottom: 20px;
@@ -160,7 +160,7 @@ footer {
     }
 
     .hero-logo {
-        width: 200px;
+        width: 250px; /* Tamaño del logo en pantallas móviles */
     }
 
     .about .info-box div {
