@@ -20,25 +20,40 @@
 
     <section id="inicio" class="hero">
         <div class="hero-content">
-            <img src="logo-white.png" alt="Electrónica 360" class="hero-logo">
+            <img src="logo-white.png" alt="Logo Electrónica 360" class="logo">
             <h1>Electrónica 360</h1>
             <p>Soluciones técnicas, sin límites</p>
         </div>
     </section>
 
-    <main>
-        <section id="nosotros">
-            <h2>Nosotros</h2>
-            <p>Misión, Visión y Objetivos</p>
-        </section>
-        <section id="servicios">
-            <h2>Servicios</h2>
-            <p>Reparación y venta de productos electrónicos</p>
-        </section>
-        <section id="contacto">
-            <h2>Contáctanos</h2>
-            <p>Av. Giraldez 274, tienda S29, Semisótano - Huancayo</p>
-        </section>
-    </main>
+    <section id="nosotros">
+        <h2>Nosotros</h2>
+        <p>Entregar calidad, seguridad y cultura tecnológica a nuestros clientes.</p>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="service">
+            <img src="macbook.png" alt="Reparación de MacBooks">
+            <h3>Reparación de MacBooks</h3>
+            <p>Especialistas en reparar cualquier modelo de MacBook.</p>
+        </div>
+        <div class="service">
+            <img src="componentes.png" alt="Venta de Componentes">
+            <h3>Venta de Componentes</h3>
+            <p>Ofrecemos una amplia variedad de piezas electrónicas.</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>Av Giraldez 274, tienda S29, Semisótano - Huancayo</p>
+        <form action="https://formsubmit.co/tu-correo-electronico" method="POST">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 </body>
 </html>
