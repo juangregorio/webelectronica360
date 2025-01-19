@@ -1,44 +1,45 @@
-/* Estilos globales */
+/* Estilos generales */
 body {
     margin: 0;
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
     background-color: #f4f4f9;
     color: #333;
 }
 
-/* Encabezado */
+/* Header */
 header {
     background-color: #3179CF;
     color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
 }
 
-nav ul li a {
-    text-decoration: none;
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
     color: white;
+    text-decoration: none;
     font-weight: bold;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     color: #71DBD8;
 }
 
-/* Sección Hero */
+/* Hero */
 .hero {
     background-color: #3179CF;
     color: white;
@@ -46,8 +47,9 @@ nav ul li a:hover {
     padding: 100px 20px;
 }
 
-.hero h2 {
-    font-size: 2.5rem;
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
 }
 
 .hero p {
@@ -56,6 +58,7 @@ nav ul li a:hover {
 }
 
 .btn-primary {
+    display: inline-block;
     background-color: #71DBD8;
     color: white;
     padding: 10px 20px;
@@ -68,13 +71,42 @@ nav ul li a:hover {
     background-color: #57a9a6;
 }
 
-/* Sección Servicios */
-.services .service-container {
+/* About */
+.about .container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about .info-box {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.about .info-box div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+/* Services */
+.services .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services .service-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
-    padding: 20px;
+    justify-content: center;
 }
 
 .services .service-card {
@@ -84,40 +116,29 @@ nav ul li a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.services .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .services .service-card img {
-    width: 100px;
+    width: 80px;
     height: auto;
     margin-bottom: 10px;
 }
 
-.services .service-card h3 {
-    font-size: 1.2rem;
-    margin: 10px 0;
+/* Contact */
+.contact .container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 20px;
 }
 
-.services .service-card p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Sección Contacto */
 .contact form {
-    max-width: 500px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.contact form input, .contact form textarea, .contact form button {
+.contact form input, .contact form textarea {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
@@ -128,8 +149,10 @@ nav ul li a:hover {
 .contact form button {
     background-color: #3179CF;
     color: white;
-    font-weight: bold;
     border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -137,7 +160,7 @@ nav ul li a:hover {
     background-color: #275a9f;
 }
 
-/* Pie de página */
+/* Footer */
 footer {
     background-color: #333;
     color: white;
