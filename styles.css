@@ -1,148 +1,146 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electrónica 360</title>
-    <link href="https://fonts.googleapis.com/css2?family=Gotham:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Estilos globales */
-        body {
-            margin: 0;
-            font-family: 'Gotham', sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-        }
+/* Estilos globales */
+body {
+    margin: 0;
+    font-family: 'Gotham', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
 
-        header {
-            background-color: #3179CF;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+/* Encabezado */
+header {
+    background-color: #3179CF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 10px 0 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
 
-        nav ul li a:hover {
-            color: #71DBD8;
-        }
+nav ul li a:hover {
+    color: #71DBD8;
+}
 
-        .hero {
-            background-color: #3179CF;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
+/* Sección Hero */
+.hero {
+    background-color: #3179CF;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
 
-        .hero h2 {
-            font-size: 2.5rem;
-        }
+.hero h2 {
+    font-size: 2.5rem;
+}
 
-        .hero p {
-            font-size: 1.2rem;
-            margin: 20px 0;
-        }
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
 
-        .btn-primary {
-            background-color: #71DBD8;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
+.btn-primary {
+    background-color: #71DBD8;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
-        .btn-primary:hover {
-            background-color: #57a9a6;
-        }
+.btn-primary:hover {
+    background-color: #57a9a6;
+}
 
-        section {
-            padding: 50px 20px;
-        }
+/* Sección Servicios */
+.services .service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
 
-        .about, .services, .contact {
-            text-align: center;
-        }
+.services .service-card {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-        .about p, .services p {
-            max-width: 800px;
-            margin: 0 auto 20px;
-        }
+.services .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Electrónica 360</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+.services .service-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
 
-    <section id="inicio" class="hero">
-        <h2>Soluciones Técnicas Sin Límites</h2>
-        <p>Reparación y venta de computadoras, impresoras, monitores y laptops con garantía y confianza.</p>
-        <a href="#contacto" class="btn-primary">Contáctanos</a>
-    </section>
+.services .service-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
 
-    <section id="nosotros" class="about">
-        <h2>Sobre Nosotros</h2>
-        <p>En Electrónica 360, entregamos calidad, seguridad y cultura tecnológica a nuestros clientes. 
-        Nos esforzamos por ser un referente en servicio técnico especializado, brindando confianza y modernidad.</p>
-        <h3>Misión</h3>
-        <p>Entregar calidad, seguridad y cultura tecnológica a nuestros clientes.</p>
-        <h3>Visión</h3>
-        <p>Ser una gran empresa en el servicio técnico con un respaldo profesional y en tecnología a disposición de nuestros clientes.</p>
-    </section>
+.services .service-card p {
+    font-size: 1rem;
+    color: #666;
+}
 
-    <section id="servicios" class="services">
-        <h2>Nuestros Servicios</h2>
-        <p>Reparación avanzada de MacBooks, laptops y equipos electrónicos. Venta de componentes de alta calidad.</p>
-    </section>
+/* Sección Contacto */
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-    <section id="contacto" class="contact">
-        <h2>Contáctanos</h2>
-        <p>¿Tienes preguntas? Envíanos un mensaje y te responderemos pronto.</p>
-        <form action="https://formsubmit.co/tu-correo-electronico" method="POST">
-            <input type="text" name="nombre" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu correo electrónico" required>
-            <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+.contact form input, .contact form textarea, .contact form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-    <footer>
-        <p>&copy; 2023 Electrónica 360. Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
+.contact form button {
+    background-color: #3179CF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #275a9f;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
