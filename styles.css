@@ -1,51 +1,52 @@
-/* Estilos Generales */
+/* General */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f9;
+    background-color: #f4f4f4;
     color: #333;
 }
 
+/* Header */
 header {
     background-color: #3179CF;
-    padding: 10px;
+    padding: 10px 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    text-align: center;
 }
 
 header nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
 header nav ul li a {
-    color: white;
     text-decoration: none;
+    color: white;
     font-weight: bold;
 }
 
+/* Hero Section */
 .hero {
+    height: 100vh;
     background-color: #3179CF;
     color: white;
-    text-align: center;
-    padding: 50px 20px;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
 .hero img.logo {
-    width: 150px;
-    height: auto;
+    width: 200px;
     margin-bottom: 20px;
 }
 
@@ -56,17 +57,17 @@ header nav ul li a {
 
 .hero p {
     font-size: 1.5rem;
-    margin: 10px 0;
+    margin-top: 10px;
 }
 
-#nosotros, #servicios, #contacto {
+/* Section Styles */
+section {
     padding: 50px 20px;
     text-align: center;
 }
 
 .service {
-    display: inline-block;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .service img {
@@ -91,4 +92,23 @@ form button {
     color: white;
     border: none;
     cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero img.logo {
+        width: 150px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
 }
