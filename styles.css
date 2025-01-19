@@ -10,18 +10,19 @@ body {
 /* Header */
 header {
     background-color: #3179CF;
-    padding: 10px 20px;
+    padding: 15px 20px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     margin: 0;
     padding: 0;
 }
@@ -30,7 +31,7 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 header nav ul li a:hover {
@@ -39,7 +40,7 @@ header nav ul li a:hover {
 
 /* Hero */
 .hero {
-    height: 100vh;
+    height: calc(100vh - 70px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,34 +52,48 @@ header nav ul li a:hover {
 
 .hero-content {
     text-align: center;
-    max-width: 90%;
+    max-width: 80%;
 }
 
 .hero-logo {
-    width: 150px; /* Tamaño predeterminado para escritorio */
+    width: 250px; /* Ajustar para escritorio */
     height: auto;
     margin-bottom: 20px;
 }
 
 .hero h1 {
-    font-size: 2rem; /* Ajustar tamaño del slogan */
-    margin-top: 20px;
-    margin-bottom: 10px;
-    line-height: 1.4;
+    font-size: 3rem; /* Ajuste para que destaque */
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Secciones */
+main section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+main section h2 {
+    font-size: 2rem;
+    color: #3179CF;
 }
 
 /* Diseño Responsivo */
 @media (max-width: 768px) {
-    .hero {
-        height: auto; /* Ajustar para no ocupar todo el viewport */
-        padding: 40px 20px;
-    }
-
     .hero-logo {
-        width: 200px; /* Más grande para móviles */
+        width: 200px; /* Más grande en móvil */
     }
 
     .hero h1 {
-        font-size: 1.8rem; /* Reducir un poco para móviles */
+        font-size: 2.5rem; /* Ajustar tamaño en móviles */
+    }
+
+    .hero p {
+        font-size: 1.2rem;
     }
 }
