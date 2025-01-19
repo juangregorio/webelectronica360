@@ -55,10 +55,16 @@ header nav ul li a:hover {
 }
 
 .hero-logo {
-    width: 400px; /* Tamaño grande del logo */
-    max-width: 100%; /* Asegura que no sobrepase el contenedor */
+    width: 500px; /* Tamaño grande del logo */
+    max-width: 90%; /* Asegura que no sobrepase el contenedor */
     height: auto;
     margin-bottom: 20px;
+}
+
+/* Texto del Hero */
+.hero h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
 }
 
 /* About */
@@ -160,7 +166,7 @@ footer {
     }
 
     .hero-logo {
-        width: 250px; /* Tamaño del logo en pantallas móviles */
+        width: 300px; /* Tamaño del logo en pantallas móviles */
     }
 
     .about .info-box div {
